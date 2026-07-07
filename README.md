@@ -1,5 +1,7 @@
 # ⚓ Harbor Jam
 
+**▶ Play it now: [swajithanand.github.io/Harbor-Jam](https://swajithanand.github.io/Harbor-Jam/)**
+
 A relaxing, browser-based "jam / unblock" puzzle game. The harbor is packed with ships — tap any ship whose lane to open water is clear and it sails home. Untangle the whole harbor at your own pace.
 
 **Zero pressure by design:** no timers, no move limits, no lives, no scores, no fail states. The only feedback for a wrong tap is a gentle bump and a soft horn. Undo is unlimited.
