@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>Harbor Jam</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9973;</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-dawn">
+<div id="app">
+  <header id="hud" class="hidden">
+    <button id="btn-levels" class="pill" title="Level select (Esc)">&#9776;</button>
+    <div id="level-label" class="hud-text">Level 1</div>
+    <div class="spacer"></div>
+    <div id="ships-left" class="hud-text">&#9875; 0</div>
+    <button id="btn-undo" class="pill" title="Undo (U)">&#8617;<span class="btn-txt"> Undo</span></button>
+    <button id="btn-restart" class="pill" title="Restart (R)">&#10227;</button>
+    <button id="btn-mute" class="pill" title="Sound (M)">&#128266;</button>
+  </header>
+
+  <main id="board-wrap"><canvas id="board"></canvas><div id="hint" class="hidden"></div></main>
+
+  <div id="level-select" class="overlay">
+    <div class="card">
+      <h1>Harbor Jam</h1>
+      <p class="tagline">Tap a ship with a clear lane and it sails home. No timers, no pressure &mdash; just a quiet harbor to untangle.</p>
+      <div id="theme-row"></div>
+      <div id="level-grid"></div>
+      <div id="fleet">
+        <h2>My fleet</h2>
+        <div id="fleet-row"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="level-complete" class="overlay hidden">
+    <div class="card small">
+      <h1>Harbor cleared &#9875;</h1>
+      <p id="complete-sub"></p>
+      <div class="row">
+        <button id="btn-complete-levels" class="pill big">Levels</button>
+        <button id="btn-next" class="pill big primary">Next harbor &#8594;</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>

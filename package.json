@@ -1,0 +1,9 @@
+{
+  "name": "harbor-jam",
+  "private": true,
+  "type": "module",
+  "description": "A calm tap-to-sail harbor puzzle. No build step - open index.html or serve statically.",
+  "scripts": {
+    "levels": "node tools/generate-levels.mjs"
+  }
+}
